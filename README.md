@@ -16,4 +16,5 @@ Explore my projects, skills, experience, and more.
 - HTML
 - CSS
 - JavaScript
-- (Add other technologies, frameworks, or libraries you used)
+
+---
