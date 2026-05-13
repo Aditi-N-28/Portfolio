@@ -15,7 +15,7 @@ Explore my projects, skills, experience, and more.
 
 ## 🛠️ Built With
 
-- HTML
+- (https://img.shields.io/badge/HTML-brown?style=for-the-badge)
 - CSS
 - JavaScript
 
