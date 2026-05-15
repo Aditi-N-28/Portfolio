@@ -389,7 +389,7 @@ renderer.setSize(W(), H());
 renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
-renderer.toneMappingExposure = 0.85;
+renderer.toneMappingExposure = 1.4;
 
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0x040208);
@@ -400,8 +400,8 @@ camera.position.set(0, 14, 18);
 camera.lookAt(0,0,0);
 
 /* ── LIGHTS ── */
-scene.add(new THREE.AmbientLight(0xffe8c0, 0.7));
-const moonLight = new THREE.DirectionalLight(0xd4a8ff, 1.2);
+scene.add(new THREE.AmbientLight(0xffe8c0, 1.8));
+const moonLight = new THREE.DirectionalLight(0xd4a8ff, 2.2);
 moonLight.position.set(-20, 30, 10);
 moonLight.castShadow = true;
 moonLight.shadow.mapSize.setScalar(1024);
@@ -411,7 +411,7 @@ moonLight.shadow.camera.right = 60;
 moonLight.shadow.camera.top = 60;
 moonLight.shadow.camera.bottom = -60;
 scene.add(moonLight);
-const warmFill = new THREE.PointLight(0xffc060, 1.0, 60, 2);
+const warmFill = new THREE.PointLight(0xffc060, 2.0, 80, 2);
 warmFill.position.set(0, 8, 0);
 scene.add(warmFill);
 
